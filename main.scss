@@ -1,0 +1,46 @@
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.information {
+  width: 50%;
+  height: 20px;
+  color: red;
+  border: 1px solid red;
+  align-self: flex-end;
+  margin-bottom: 5vh;
+
+}
+
+.cube {
+  background-color: rgb(255, 0, 0);
+  height: 3vw;
+  width: 3vw;
+  border-radius: 50%;
+  margin: 2vw;
+//  color: dodgerblue;
+
+}
+
+@for $i from 1 through 10 {
+.no#{$i} {
+background-color: #{rgb(25*$i, 25*$i, 25*$i)};
+//  color: #{rgb(255-(25*$i), 255-(25*$i), 255-(25*$i))};
+}
+}
+
+//.selfie {
+//  order: -1;
+//}
+
+//@for $i from 1 through 10 {
+//  .selfie#{$i} {
+//    order: -1*$i;
+//  }
+//}
